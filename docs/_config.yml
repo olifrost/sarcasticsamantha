@@ -1,0 +1,28 @@
+# General
+name: Sarcastic Samantha
+tagline: A harsh friend in your pocket
+
+# Jekyll
+exclude: ['Rakefile']
+# markdown: redcarpet
+
+# App Store
+appstore_url: https://itunes.apple.com/gb/app/sarcastic-samantha/id1276227679
+appstore: <a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/assets/app-store.svg" alt="Download on the App Store"></a>
+appstore_white: <a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/assets/app-store-white.svg" alt="Download on the App Store"></a>
+
+# Screenshots
+screenshots:
+- screenshot01
+- screenshot02
+- screenshot03
+- screenshot04
+
+# Company Info
+company: Oli Frost
+company_website: http://olifro.st
+
+# Emails
+email_press: mail@oliverfrost.co.uk
+email_contact: mail@oliverfrost.co.uk
+email_support: mail@oliverfrost.co.uk
