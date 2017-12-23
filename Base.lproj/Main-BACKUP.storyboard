@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrollBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Troll responsibly. Tap troll to begin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXF-52-Ieu" customClass="UIBorderedLabel" customModule="TrollBot" customModuleProvider="target">
+                                <rect key="frame" x="20" y="65" width="555" height="297"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="FtA-wE-9mm">
+                                <rect key="frame" x="20" y="526" width="555" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ihQ-X8-vIC"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="👱🏽  Drunk"/>
+                                    <segment title="👩🏼  Sassy"/>
+                                    <segment title="👵🏻 Cranky"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7MN-bv-iGx"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7g-rE-dig">
+                                <rect key="frame" x="522" y="311" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="AQQ-SV-vUS"/>
+                                </constraints>
+                                <state key="normal" image="upload"/>
+                                <connections>
+                                    <action selector="Share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZR-Ml-z5F"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech" translatesAutoresizingMaskIntoConstraints="NO" id="nOK-Jl-WdG">
+                                <rect key="frame" x="267" y="361" width="60" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Ec1-Oy-96z"/>
+                                    <constraint firstAttribute="width" constant="60" id="cKO-IY-eeF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nII-1h-GHg">
+                                <rect key="frame" x="465" y="311" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="I3F-Dk-hqK"/>
+                                </constraints>
+                                <state key="normal" image="speaker"/>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hn4-cd-4pL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfz-er-rK2">
+                                <rect key="frame" x="20" y="437" width="555" height="75"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="37"/>
+                                <state key="normal" title="Troll"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderwidth" value="2"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Troll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4T-yN-x5A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lfz-er-rK2" firstAttribute="leading" secondItem="FtA-wE-9mm" secondAttribute="leading" id="0AG-Zx-9L1"/>
+                            <constraint firstItem="nOK-Jl-WdG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="341" id="3Rv-iJ-Nbz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FtA-wE-9mm" secondAttribute="bottom" constant="46" id="5ay-vL-Wur"/>
+                            <constraint firstItem="GXF-52-Ieu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="7Ht-1t-78X"/>
+                            <constraint firstItem="nII-1h-GHg" firstAttribute="firstBaseline" secondItem="W7g-rE-dig" secondAttribute="firstBaseline" id="GLj-VQ-tU5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GXF-52-Ieu" secondAttribute="trailing" constant="5" id="HSd-oY-mbg"/>
+                            <constraint firstItem="W7g-rE-dig" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="291" id="KDz-2V-P5w"/>
+                            <constraint firstItem="lfz-er-rK2" firstAttribute="top" secondItem="GXF-52-Ieu" secondAttribute="bottom" constant="75" id="SbM-m2-7tj"/>
+                            <constraint firstItem="nII-1h-GHg" firstAttribute="baseline" secondItem="W7g-rE-dig" secondAttribute="baseline" id="WNs-lB-bPl"/>
+                            <constraint firstItem="GXF-52-Ieu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cWE-94-kCd"/>
+                            <constraint firstItem="FtA-wE-9mm" firstAttribute="top" secondItem="lfz-er-rK2" secondAttribute="bottom" constant="14" id="ddk-Bk-1KI"/>
+                            <constraint firstItem="nOK-Jl-WdG" firstAttribute="centerX" secondItem="lfz-er-rK2" secondAttribute="centerX" id="drh-zh-fy7"/>
+                            <constraint firstItem="lfz-er-rK2" firstAttribute="top" secondItem="nOK-Jl-WdG" secondAttribute="bottom" constant="41" id="dzo-kW-wUv"/>
+                            <constraint firstItem="lfz-er-rK2" firstAttribute="trailing" secondItem="FtA-wE-9mm" secondAttribute="trailing" id="e1K-54-J87"/>
+                            <constraint firstItem="GXF-52-Ieu" firstAttribute="trailing" secondItem="lfz-er-rK2" secondAttribute="trailing" id="gfY-wV-m9E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7g-rE-dig" secondAttribute="trailing" constant="14" id="red-ic-lyj"/>
+                            <constraint firstItem="W7g-rE-dig" firstAttribute="leading" secondItem="nII-1h-GHg" secondAttribute="trailing" constant="13" id="sJz-71-vGH"/>
+                            <constraint firstItem="GXF-52-Ieu" firstAttribute="leading" secondItem="lfz-er-rK2" secondAttribute="leading" id="sia-nt-AQW"/>
+                            <constraint firstItem="lfz-er-rK2" firstAttribute="top" secondItem="W7g-rE-dig" secondAttribute="bottom" constant="82" id="v6w-qL-HWc"/>
+                            <constraint firstItem="nII-1h-GHg" firstAttribute="top" secondItem="W7g-rE-dig" secondAttribute="top" id="xTa-YB-dWM"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="commentLabel" destination="GXF-52-Ieu" id="SRR-ow-itg"/>
+                        <outlet property="segmentedControl" destination="FtA-wE-9mm" id="6eZ-Am-57I"/>
+                        <outlet property="shareButton" destination="W7g-rE-dig" id="c2G-JH-AEM"/>
+                        <outlet property="theplayButton" destination="nII-1h-GHg" id="rNV-d4-wzw"/>
+                        <outlet property="trollButton" destination="lfz-er-rK2" id="RWm-NR-iLG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="speaker" width="25" height="25"/>
+        <image name="speech" width="112" height="56"/>
+        <image name="upload" width="25" height="25"/>
+    </resources>
+</document>
