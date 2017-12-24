@@ -8,7 +8,7 @@ layout: default
   <div class="iphone">
     <div id="screenshots">
       {% for screenshot in site.screenshots %}
-        <img alt="{{ site.name }} Screenshot" src="{{ base-url }}/assets/{{ screenshot }}.png" srcset="/assets/{{ screenshot }}@2x.png 2x" width="320" heigh="568">
+        <img alt="{{ site.name }} Screenshot" src="{{ site.baseurl }}/assets/{{ screenshot }}.png" srcset="/assets/{{ screenshot }}@2x.png 2x" width="320" heigh="568">
       {% endfor %}
     </div>
   </div>
