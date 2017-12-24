@@ -6,7 +6,7 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="{{ "/assets/application.css" | relative_url }}">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="{{ "/favicon.png" | relative_url }}">
 </head>
 <body>
   <header>
@@ -17,7 +17,7 @@
       <div>
         <h1><a href="/" rel="home">{{ site.name }}</a></h1>
         <h2>{{ site.tagline }}</h2>
-        <p>{{ site.appstore_white }}</p>
+        <p>{% include appstore_white.html %}</p>
       </div>
     </div>
   </header>
@@ -30,15 +30,16 @@
     </div>
     <div>
       <ul>
-        <li><a href="/support">Support</a></li>
+        <li><a href="{{ "/support" | relative_url }}">Support</a></li>
         <li><a href="mailto:{{ site.email_contact }}">Contact</a></li>
-        <li><a href="/press">Press</a></li>
+        <li><a href="{{ "/press" | relative_url }}">Press</a></li>
       </ul>
     </div>
   </footer>
-  <!--<script src="/assets/srcset.min.js"></script>-->
-  {% for js in page.js %}
-    <script src="{{ js }}"></script>
-  {% endfor %}
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="{{ "/assets/jquery.cycle.lite.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/home.js" | relative_url }}"></script>
+
 </body>
 </html>
