@@ -1,6 +1,7 @@
 # General
 name: Sarcastic Samantha
 tagline: A harsh friend in your pocket
+base.url: /sarcasticsamantha/docs
 
 # Jekyll
 exclude: ['Rakefile']
