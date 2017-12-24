@@ -9,8 +9,8 @@ exclude: ['Rakefile']
 
 # App Store
 appstore_url: https://itunes.apple.com/gb/app/sarcastic-samantha/id1276227679
-appstore: <a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/sasrcasticsamantha/docs/assets/app-store.svg" alt="Download on the App Store"></a>
-appstore_white: <a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/sasrcasticsamantha/docs/assets/app-store-white.svg" alt="Download on the App Store"></a>
+appstore: <a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/sasrcasticsamantha/assets/app-store.svg" alt="Download on the App Store"></a>
+appstore_white: <a href="https://itunes.apple.com/app/id123456789" class="app-store" rel="external nofollow"><img src="/sasrcasticsamantha/assets/app-store-white.svg" alt="Download on the App Store"></a>
 
 # Screenshots
 screenshots:
