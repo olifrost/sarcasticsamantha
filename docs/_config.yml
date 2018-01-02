@@ -2,10 +2,6 @@
 name: Sarcastic Samantha
 tagline: A harsh friend in your pocket
 
-# Jekyll
-exclude: ['Rakefile']
-# markdown: redcarpet
-
 # App Store
 appstore_url: https://itunes.apple.com/gb/app/sarcastic-samantha/id1276227679
 
@@ -21,6 +17,33 @@ company: Oli Frost
 company_website: http://olifro.st
 
 # Emails
-email_press: mail@oliverfrost.co.uk
-email_contact: mail@oliverfrost.co.uk
-email_support: mail@oliverfrost.co.uk
+email_press: oli@olifro.st
+email_contact: oli@olifro.st
+email_support: oli@olifro.st
+
+
+# SEO
+author:
+  name: Oli Frost
+  twitter: realolifrost
+  instagram: realolifrost
+  facebook: olifrost
+  email: oli@olifro.st
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /img/logo.png
+
+social:
+  name: Oli Frost
+  links:
+    - https://twitter.com/realolifrost
+    - https://instagram.com/realolifrost
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Sarcastic Samantha | A harsh friend in your pocket
+description: Sarcastic Samantha helps you find out if your idea is any good by reading it back to you in a sarcastic patronising voice.
 article: https://lifehacker.com/ios-sarcastic-samantha-privately-mocks-things-with-you-1818822777
 press: lifehacker
 
