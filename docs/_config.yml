@@ -35,7 +35,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /img/logo.png
+      image: /assets/preview.jpg
 
 social:
   name: Oli Frost
